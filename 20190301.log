@@ -1,0 +1,272 @@
+2019-03-03 11:15:41.213  INFO 5260 --- [main] com.example.book.BookApplicationTests    : Starting BookApplicationTests on Lenovo with PID 5260 (started by kangxiaolei in /home/kangxiaolei/IdeaProjects/book)
+2019-03-03 11:15:41.216  INFO 5260 --- [main] com.example.book.BookApplicationTests    : No active profile set, falling back to default profiles: default
+2019-03-03 11:15:41.387 DEBUG 5260 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@424fd310
+2019-03-03 11:15:43.395  INFO 5260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-03 11:15:43.409  INFO 5260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-03 11:15:43.457  INFO 5260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-03-03 11:15:44.097  INFO 5260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd2feb67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-03 11:15:46.067 DEBUG 5260 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-03 11:15:46.483  INFO 5260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-03 11:15:46.500 DEBUG 5260 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-03 11:15:46.588 DEBUG 5260 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-03-03 11:15:46.613 DEBUG 5260 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-03 11:15:46.627 DEBUG 5260 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-03 11:15:47.360  INFO 5260 --- [main] com.example.book.BookApplicationTests    : Started BookApplicationTests in 7.065 seconds (JVM running for 9.386)
+2019-03-03 11:15:47.915  INFO 5260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-03 11:15:48.351  INFO 5260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-03 11:15:48.564 DEBUG 5260 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@424fd310, started on Sun Mar 03 11:15:41 EST 2019
+2019-03-03 11:15:48.567  INFO 5260 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-03 11:15:48.638  INFO 5260 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-03 11:15:48.643  INFO 5260 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-03 03:25:31.198  INFO 6383 --- [main] com.example.book.BookApplication         : Starting BookApplication on Lenovo with PID 6383 (/home/kangxiaolei/IdeaProjects/book/target/classes started by kangxiaolei in /home/kangxiaolei/IdeaProjects/book)
+2019-03-03 03:25:31.207  INFO 6383 --- [main] com.example.book.BookApplication         : No active profile set, falling back to default profiles: default
+2019-03-03 03:25:32.825  INFO 6383 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-03 03:25:32.830  INFO 6383 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-03 03:25:32.859  INFO 6383 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-03-03 03:25:33.398  INFO 6383 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd712ed9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-03 03:25:34.236  INFO 6383 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-03-03 03:25:34.299  INFO 6383 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-03 03:25:34.299  INFO 6383 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-03 03:25:34.309  INFO 6383 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-03 03:25:34.454  INFO 6383 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-03 03:25:34.455 DEBUG 6383 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-03 03:25:34.455  INFO 6383 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3145 ms
+2019-03-03 03:25:35.554 DEBUG 6383 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-03 03:25:35.808  INFO 6383 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:25:35.819 DEBUG 6383 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-03 03:25:35.878 DEBUG 6383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-03-03 03:25:35.890 DEBUG 6383 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-03 03:25:35.900 DEBUG 6383 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-03 03:25:36.271 ERROR 6383 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-80]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.book.BookApplication.main(BookApplication.java:31) ~[classes/:na]
+Caused by: java.net.SocketException: Permission denied
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:461) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:453) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	... 14 common frames omitted
+
+2019-03-03 03:25:36.277  INFO 6383 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-03-03 03:25:36.289  INFO 6383 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-03 03:25:36.291 ERROR 6383 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2019-03-03 03:25:36.294  INFO 6383 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:26:01.660  INFO 6474 --- [main] com.example.book.BookApplication         : Starting BookApplication on Lenovo with PID 6474 (/home/kangxiaolei/IdeaProjects/book/target/classes started by kangxiaolei in /home/kangxiaolei/IdeaProjects/book)
+2019-03-03 03:26:01.664  INFO 6474 --- [main] com.example.book.BookApplication         : No active profile set, falling back to default profiles: default
+2019-03-03 03:26:03.213  INFO 6474 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-03 03:26:03.217  INFO 6474 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-03 03:26:03.242  INFO 6474 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-03-03 03:26:03.702  INFO 6474 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a2e9753] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-03 03:26:04.169  INFO 6474 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-03 03:26:04.209  INFO 6474 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-03 03:26:04.209  INFO 6474 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-03 03:26:04.222  INFO 6474 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-03 03:26:04.319  INFO 6474 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-03 03:26:04.319 DEBUG 6474 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-03 03:26:04.319  INFO 6474 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2513 ms
+2019-03-03 03:26:05.319 DEBUG 6474 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-03 03:26:05.549  INFO 6474 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:26:05.560 DEBUG 6474 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-03 03:26:05.622 DEBUG 6474 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-03-03 03:26:05.636 DEBUG 6474 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-03 03:26:05.647 DEBUG 6474 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-03 03:26:06.075  INFO 6474 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-03 03:26:06.082  INFO 6474 --- [main] com.example.book.BookApplication         : Started BookApplication in 5.3 seconds (JVM running for 5.895)
+2019-03-03 03:26:54.724  INFO 6474 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-03 03:26:54.725  INFO 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-03 03:26:54.725 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-03-03 03:26:54.735 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-03-03 03:26:54.735  INFO 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-03-03 03:26:54.744 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/borrow?c=101&b=20190201", parameters={masked}
+2019-03-03 03:26:54.750 DEBUG 6474 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.book.controller.TestController.borrow(int,int)
+2019-03-03 03:26:54.802  WARN 6474 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.example.book.controller.TestController.borrow(int,int)]
+2019-03-03 03:26:54.803 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2019-03-03 03:26:54.808 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?c=101&b=20190201", parameters={masked}
+2019-03-03 03:26:54.813 DEBUG 6474 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-03 03:26:54.829 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-03-03 03:26:54.830 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Mar 03 03:26:54 EST 2019, status=400, error=Bad Request, message=Required request bod (truncated)...]
+2019-03-03 03:26:54.876 DEBUG 6474 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2019-03-03 03:28:09.426  INFO 6474 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:28:13.968  INFO 6893 --- [main] com.example.book.BookApplication         : Starting BookApplication on Lenovo with PID 6893 (/home/kangxiaolei/IdeaProjects/book/target/classes started by kangxiaolei in /home/kangxiaolei/IdeaProjects/book)
+2019-03-03 03:28:13.987  INFO 6893 --- [main] com.example.book.BookApplication         : No active profile set, falling back to default profiles: default
+2019-03-03 03:28:15.581  INFO 6893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-03 03:28:15.584  INFO 6893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-03 03:28:15.612  INFO 6893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-03-03 03:28:16.061  INFO 6893 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d55a32b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-03 03:28:16.568  INFO 6893 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-03 03:28:16.610  INFO 6893 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-03 03:28:16.611  INFO 6893 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-03 03:28:16.625  INFO 6893 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-03 03:28:16.750  INFO 6893 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-03 03:28:16.751 DEBUG 6893 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-03 03:28:16.751  INFO 6893 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2579 ms
+2019-03-03 03:28:18.205 DEBUG 6893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-03 03:28:18.472  INFO 6893 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:28:18.483 DEBUG 6893 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-03 03:28:18.559 DEBUG 6893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-03-03 03:28:18.579 DEBUG 6893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-03 03:28:18.593 DEBUG 6893 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-03 03:28:19.062  INFO 6893 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-03 03:28:19.067  INFO 6893 --- [main] com.example.book.BookApplication         : Started BookApplication in 6.004 seconds (JVM running for 6.638)
+2019-03-03 03:28:39.790  INFO 6893 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-03 03:28:39.790  INFO 6893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-03 03:28:39.790 DEBUG 6893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-03-03 03:28:39.798 DEBUG 6893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-03-03 03:28:39.799  INFO 6893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-03-03 03:28:39.807 DEBUG 6893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/borrow?c=101&b=20190201", parameters={masked}
+2019-03-03 03:28:39.811 DEBUG 6893 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.book.controller.TestController.borrow(int,int)
+2019-03-03 03:28:39.835  INFO 6893 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-03 03:28:39.971  INFO 6893 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-03 03:28:40.117 DEBUG 6893 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-03-03 03:28:40.117 DEBUG 6893 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [""]
+2019-03-03 03:28:40.137 DEBUG 6893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-03-03 03:29:53.233  INFO 6893 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:29:53.249  INFO 6893 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-03 03:29:53.257  INFO 6893 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-03 03:29:57.081  INFO 7097 --- [main] com.example.book.BookApplication         : Starting BookApplication on Lenovo with PID 7097 (/home/kangxiaolei/IdeaProjects/book/target/classes started by kangxiaolei in /home/kangxiaolei/IdeaProjects/book)
+2019-03-03 03:29:57.089  INFO 7097 --- [main] com.example.book.BookApplication         : No active profile set, falling back to default profiles: default
+2019-03-03 03:29:58.618  INFO 7097 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-03 03:29:58.621  INFO 7097 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-03 03:29:58.669  INFO 7097 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-03-03 03:29:59.241  INFO 7097 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27938c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-03 03:29:59.727  INFO 7097 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-03 03:29:59.767  INFO 7097 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-03 03:29:59.768  INFO 7097 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-03 03:29:59.781  INFO 7097 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-03 03:29:59.883  INFO 7097 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-03 03:29:59.883 DEBUG 7097 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-03 03:29:59.883  INFO 7097 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2602 ms
+2019-03-03 03:30:00.543  INFO 7097 --- [main] c.example.book.cache.MybatisRedisCache   : Redis Cache id com.example.book.repository.UserMapper
+2019-03-03 03:30:00.956 DEBUG 7097 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-03 03:30:01.179  INFO 7097 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:30:01.190 DEBUG 7097 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-03 03:30:01.259 DEBUG 7097 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-03-03 03:30:01.273 DEBUG 7097 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-03 03:30:01.283 DEBUG 7097 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-03 03:30:01.686  INFO 7097 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-03 03:30:01.691  INFO 7097 --- [main] com.example.book.BookApplication         : Started BookApplication in 5.54 seconds (JVM running for 6.467)
+2019-03-03 03:30:12.234  INFO 7097 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-03 03:30:12.235  INFO 7097 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-03 03:30:12.235 DEBUG 7097 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-03-03 03:30:12.243 DEBUG 7097 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-03-03 03:30:12.243  INFO 7097 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-03-03 03:30:12.252 DEBUG 7097 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/borrow?c=101&b=20190201", parameters={masked}
+2019-03-03 03:30:12.256 DEBUG 7097 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.book.controller.TestController.borrow(int,int)
+2019-03-03 03:30:12.279  INFO 7097 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-03 03:30:12.448  INFO 7097 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-03 03:30:12.693  INFO 7097 --- [http-nio-8080-exec-2] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-03-03 03:30:12.694  INFO 7097 --- [http-nio-8080-exec-2] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-03-03 03:30:13.036 DEBUG 7097 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-03-03 03:30:13.037 DEBUG 7097 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [""]
+2019-03-03 03:30:13.055 DEBUG 7097 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-03-03 03:30:50.260 DEBUG 7097 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/borrow?c=101&b=20190201", parameters={masked}
+2019-03-03 03:30:50.261 DEBUG 7097 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.book.controller.TestController.borrow(int,int)
+2019-03-03 03:30:50.337 DEBUG 7097 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-03-03 03:30:50.337 DEBUG 7097 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [""]
+2019-03-03 03:30:50.339 DEBUG 7097 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-03-03 03:31:22.368 DEBUG 7097 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/borrow?c=101&b=20190201", parameters={masked}
+2019-03-03 03:31:22.369 DEBUG 7097 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.book.controller.TestController.borrow(int,int)
+2019-03-03 03:31:22.391 DEBUG 7097 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-03-03 03:31:22.391 DEBUG 7097 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [""]
+2019-03-03 03:31:22.392 DEBUG 7097 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-03-03 03:31:24.445 DEBUG 7097 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/borrow?c=101&b=20190201", parameters={masked}
+2019-03-03 03:31:24.446 DEBUG 7097 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.book.controller.TestController.borrow(int,int)
+2019-03-03 03:31:24.460 DEBUG 7097 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-03-03 03:31:24.460 DEBUG 7097 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [""]
+2019-03-03 03:31:24.461 DEBUG 7097 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-03-03 03:31:35.582  INFO 7097 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:31:36.701  INFO 7097 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-03 03:31:36.707  INFO 7097 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-03 03:40:54.240  INFO 7965 --- [main] com.example.book.BookApplicationTests    : Starting BookApplicationTests on Lenovo with PID 7965 (started by kangxiaolei in /home/kangxiaolei/IdeaProjects/book)
+2019-03-03 03:40:54.242  INFO 7965 --- [main] com.example.book.BookApplicationTests    : No active profile set, falling back to default profiles: default
+2019-03-03 03:40:54.312 DEBUG 7965 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5a411614
+2019-03-03 03:40:55.295  INFO 7965 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-03 03:40:55.298  INFO 7965 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-03 03:40:55.328  INFO 7965 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-03-03 03:40:55.940  INFO 7965 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c072b4a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-03 03:40:57.951 DEBUG 7965 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-03 03:40:58.239  INFO 7965 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:40:58.256 DEBUG 7965 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-03 03:40:58.321 DEBUG 7965 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-03-03 03:40:58.346 DEBUG 7965 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-03 03:40:58.360 DEBUG 7965 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-03 03:40:58.887  INFO 7965 --- [main] com.example.book.BookApplicationTests    : Started BookApplicationTests in 5.771 seconds (JVM running for 7.497)
+2019-03-03 03:40:59.267  INFO 7965 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-03 03:40:59.448  INFO 7965 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-03 03:40:59.531 DEBUG 7965 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5a411614, started on Sun Mar 03 03:40:54 EST 2019
+2019-03-03 03:40:59.539  INFO 7965 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:40:59.574  INFO 7965 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-03 03:40:59.596  INFO 7965 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-03-03 03:41:12.798  INFO 8049 --- [main] com.example.book.BookApplication         : Starting BookApplication on Lenovo with PID 8049 (/home/kangxiaolei/IdeaProjects/book/target/classes started by kangxiaolei in /home/kangxiaolei/IdeaProjects/book)
+2019-03-03 03:41:12.802  INFO 8049 --- [main] com.example.book.BookApplication         : No active profile set, falling back to default profiles: default
+2019-03-03 03:41:14.134  INFO 8049 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-03 03:41:14.138  INFO 8049 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-03 03:41:14.163  INFO 8049 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-03-03 03:41:14.600  INFO 8049 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f318939f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-03 03:41:15.059  INFO 8049 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-03 03:41:15.098  INFO 8049 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-03 03:41:15.098  INFO 8049 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-03 03:41:15.111  INFO 8049 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-03 03:41:15.214  INFO 8049 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-03 03:41:15.214 DEBUG 8049 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-03 03:41:15.215  INFO 8049 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2184 ms
+2019-03-03 03:41:16.286 DEBUG 8049 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-03 03:41:16.516  INFO 8049 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:41:16.529 DEBUG 8049 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-03 03:41:16.611 DEBUG 8049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2019-03-03 03:41:16.626 DEBUG 8049 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-03 03:41:16.636 DEBUG 8049 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-03 03:41:17.053  INFO 8049 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-03 03:41:17.058  INFO 8049 --- [main] com.example.book.BookApplication         : Started BookApplication in 5.139 seconds (JVM running for 6.049)
+2019-03-03 03:41:33.369  INFO 8049 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-03 03:41:33.370  INFO 8049 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-03 03:41:33.370 DEBUG 8049 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-03-03 03:41:33.378 DEBUG 8049 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-03-03 03:41:33.378  INFO 8049 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-03-03 03:41:33.385 DEBUG 8049 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/borrow?c=101&b=20190201", parameters={masked}
+2019-03-03 03:41:33.389 DEBUG 8049 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.book.controller.TestController.borrow(int,int)
+2019-03-03 03:41:33.416  INFO 8049 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-03-03 03:41:33.590  INFO 8049 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-03-03 03:41:33.734 DEBUG 8049 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-03-03 03:41:33.735 DEBUG 8049 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"cardNumber":101,"password":"123456","name":"jerry","IDNumber":"110110199912062311","phoneNumber": (truncated)...]
+2019-03-03 03:41:33.746 DEBUG 8049 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-03-03 03:42:19.448  INFO 8049 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-03 03:42:19.466  INFO 8049 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-03-03 03:42:19.478  INFO 8049 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

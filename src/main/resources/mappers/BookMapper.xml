@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.book.repository.BookMapper">
+    <resultMap id="bookResultMap" type="book">
+        <id property="id" column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        <result property="title" column="title" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result property="press" column="press" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result property="address" column="address" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result property="numbers" column="numbers" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        <association property="typeId" column="type_id" javaType="bookType">
+            <id property="id" column="id" javaType="java.lang.Integer" jdbcType="INTEGER"></id>
+            <result property="type" column="type" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
+
+    <insert id="saveBook">
+        insert into book_information
+        values(#{id},#{title},#{press},#{typeId.id},#{address},#{numbers})
+    </insert>
+
+    <select id="selectAllBook" resultMap="bookResultMap">
+        select *
+        from book_information
+    </select>
+
+    <select id="selectNumbersByBookID" resultType="int">
+        select numbers
+        from book_information
+        where id = #{bookId}
+    </select>
+
+    <select id="selectBookByBookID" resultMap="bookResultMap">
+        select *
+        from book_information
+        where id = #{bookId}
+    </select>
+</mapper>

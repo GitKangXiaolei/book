@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.book.repository.ReturnedMapper">
+    <resultMap id="ReturnedResultMap" type="return">
+        <id property="id" column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        <result property="returnedDate" column="returned_date" javaType="java.time.LocalDate" jdbcType="DATE"/>
+        <association property="borrowId" column="borrow_id" javaType="borrow">
+            <id property="id" column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <result property="borrowDate" column="borrow_date" javaType="java.time.LocalDate" jdbcType="DATE"/>
+            <association property="cardNumber" column="card_number" javaType="user">
+                <id property="cardNumber" column="card_number" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+                <result property="name" column="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+                <result property="phoneNumber" column="phone_number" javaType="java.lang.String" jdbcType="VARCHAR"/>
+                <result property="IDNumber" column="ID_number" javaType="java.lang.String" jdbcType="VARCHAR"/>
+                <result property="password" column="password" javaType="java.lang.String" jdbcType="VARCHAR"/>
+                <result property="deposit" column="deposit" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            </association>
+            <association property="bookId" column="book_d" javaType="book">
+                <id property="id" column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+                <result property="title" column="title" javaType="java.lang.String" jdbcType="VARCHAR"/>
+                <result property="press" column="press" javaType="java.lang.String" jdbcType="VARCHAR"/>
+                <result property="address" column="address" javaType="java.lang.String" jdbcType="VARCHAR"/>
+                <result property="numbers" column="numbers" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+                <association property="typeId" column="type_id" javaType="bookType">
+                    <id property="id" column="id"></id>
+                    <result property="type" column="type"/>
+                </association>
+            </association>
+        </association>
+    </resultMap>
+
+    <insert id="saveReturned">
+        insert into returned_information
+        values(#{id},#{returnedDate},#{borrowId.id})
+    </insert>
+
+    <select id="selectAllReturned" resultMap="ReturnedResultMap">
+        select *
+        from returned_information
+    </select>
+
+    <select id="selectCountByBorrowId" resultType="int">
+        select count(*)
+        from returned_information
+        where borrow_id = #{borrowId}
+    </select>
+
+    <select id="selectCountByBookId" resultType="int">
+        select count(*)
+        from borrowing_information b,returned_information r
+        where r.borrow_id = b.id
+        and b.book_id = #{bookId}
+    </select>
+
+    <select id="selectCount" resultType="int">
+        select count(*)
+        from returned_information
+    </select>
+</mapper>

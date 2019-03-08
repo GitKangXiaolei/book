@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.book.repository.BorrowingMapper">
+    <resultMap id="borrowingResultMap" type="borrow">
+        <id property="id" column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        <result property="borrowDate" column="borrow_date" javaType="java.time.LocalDate" jdbcType="DATE"/>
+        <association property="cardNumber" column="card_number" javaType="user">
+            <id property="cardNumber" column="card_number" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <result property="name" column="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <result property="phoneNumber" column="phone_number" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <result property="IDNumber" column="ID_number" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <result property="password" column="password" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <result property="deposit" column="deposit" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        </association>
+        <association property="bookId" column="book_id" javaType="book">
+            <id property="id" column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <result property="title" column="title" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <result property="press" column="press" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <result property="address" column="address" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <result property="numbers" column="numbers" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <association property="typeId" column="type_id" javaType="bookType">
+                <id property="id" column="id"></id>
+                <result property="type" column="type"/>
+            </association>
+        </association>
+    </resultMap>
+
+    <insert id="saveBorrowing">
+        insert into borrowing_information
+        values(#{id},#{cardNumber.cardNumber},#{bookId.id},#{borrowDate})
+    </insert>
+
+    <select id="selectAllBorrowing" resultMap="borrowingResultMap">
+        select *
+        from borrowing_information
+    </select>
+
+    <select id="selectCountByBookId" resultType="int">
+        select count(*)
+        from borrowing_information
+        where book_id = #{bookId}
+    </select>
+
+    <select id="selectBorrowId" resultType="int">
+        select id
+        from borrowing_information
+        where card_number = #{cardNumber}
+        and book_id = #{bookId}
+        and borrow_date =
+        (select max(borrow_date) from borrowing_information where book_id = #{bookId} and card_number = #{cardNumber})
+    </select>
+
+    <select id="selectDateByBorrowId" resultType="java.time.LocalDate">
+        select borrow_date
+        from borrowing_information
+        where id = #{borrowId}
+    </select>
+
+    <select id="selectCount" resultType="int">
+        select count(*)
+        from borrowing_information
+    </select>
+
+    <select id="selectInformationByBorrowId" resultMap="borrowingResultMap">
+        select *
+        from borrowing_information
+        where id = #{borrowId}
+    </select>
+</mapper>
