@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Service
 @Transactional
@@ -46,6 +47,11 @@ public class BorrowServiceImpl implements BorrowService {
             System.out.println("借阅成功！");
             return saveBorrowing(new Borrowing(getNextId(), user.selectUserById(cardNumber), book.selectBookByBookID(bookId), LocalDate.now()));
         }
+    }
+
+    @Override
+    public List<Borrowing> findAllBorrowing() {
+        return borrow.selectAllBorrowing();
     }
 
     // 获取借阅信息表下一个id

@@ -1,7 +1,6 @@
 package com.example.book.controller;
 
 import com.example.book.service.BorrowService;
-import com.example.book.service.UserService;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,8 +12,6 @@ import java.util.Map;
 public class TestController {
     @Autowired
     BorrowService borrowService;
-    @Autowired
-    UserService userService;
 
     // json与map互相转换
     @RequestMapping(value = "/", method = {RequestMethod.GET})
@@ -27,8 +24,11 @@ public class TestController {
     @RequestMapping(value = "/borrow", method = {RequestMethod.GET})
     @ResponseBody
     public String borrow(@RequestParam int c, @RequestParam int b) {
-        borrowService.borrowService(c, b);
         Gson gson = new Gson();
-        return gson.toJson(userService.getEntity(c));
+        if (borrowService.borrowService(c, b)){
+            return gson.toJson(borrowService.findAllBorrowing());
+        }else {
+            return gson.toJson("借阅失败！");
+        }
     }
 }
