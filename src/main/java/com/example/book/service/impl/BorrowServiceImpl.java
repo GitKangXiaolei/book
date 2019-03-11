@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @Service
 @Transactional
@@ -40,7 +39,7 @@ public class BorrowServiceImpl implements BorrowService {
         } else if (getActualNumbers(bookId) == 1) {
             System.out.println("实际在馆数量仅为壹本！借阅失败！");
             return false;
-        } else if (returnm.selectCountByBorrowId(borrow.selectBorrowId(cardNumber,bookId)) == 0) {
+        } else if (returnm.selectCountByBorrowId(findBorrowId(cardNumber,bookId)) == 0) {
             System.out.println("还未归还！借阅失败！");
             return false;
         } else {
@@ -50,8 +49,13 @@ public class BorrowServiceImpl implements BorrowService {
     }
 
     @Override
-    public List<Borrowing> findAllBorrowing() {
-        return borrow.selectAllBorrowing();
+    public Borrowing findBorrowing(int borrowId) {
+        return borrow.selectInformationByBorrowId(borrowId);
+    }
+
+    @Override
+    public Integer findBorrowId(int cardNumber, int bookId) {
+        return borrow.selectBorrowId(cardNumber,bookId);
     }
 
     // 获取借阅信息表下一个id

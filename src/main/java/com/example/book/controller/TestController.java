@@ -25,9 +25,9 @@ public class TestController {
     @ResponseBody
     public String borrow(@RequestParam int c, @RequestParam int b) {
         Gson gson = new Gson();
-        if (borrowService.borrowService(c, b)){
-            return gson.toJson(borrowService.findAllBorrowing());
-        }else {
+        if (borrowService.borrowService(c, b)) {
+            return gson.toJson(borrowService.findBorrowing(borrowService.findBorrowId(c, b)));
+        } else {
             return gson.toJson("借阅失败！");
         }
     }

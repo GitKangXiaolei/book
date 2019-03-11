@@ -65,8 +65,10 @@
     </select>
 
     <select id="selectInformationByBorrowId" resultMap="borrowingResultMap">
-        select *
-        from borrowing_information
-        where id = #{borrowId}
+        SELECT *
+        FROM borrowing_information b,user u,book_information book
+        WHERE b.card_number=u.card_number
+        AND b.book_id = book.id
+        AND b.id = #{borrowId}
     </select>
 </mapper>
