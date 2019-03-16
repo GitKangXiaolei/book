@@ -1,11 +1,12 @@
 package com.example.book.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.example.book.entity.Borrowing;
 import com.example.book.service.BorrowService;
-import com.google.gson.Gson;
+import com.example.book.util.ExcelUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.Map;
 
 @Controller
@@ -24,11 +25,15 @@ public class TestController {
     @RequestMapping(value = "/borrow", method = {RequestMethod.GET})
     @ResponseBody
     public String borrow(@RequestParam int c, @RequestParam int b) {
-        Gson gson = new Gson();
+//        Gson gson = new Gson();
         if (borrowService.borrowService(c, b)) {
-            return gson.toJson(borrowService.findBorrowing(borrowService.findBorrowId(c, b)));
+            Borrowing bo = borrowService.findBorrowing(borrowService.findBorrowId(c, b));
+//            ExcelUtils.outFile(ExcelUtils.expExcel(), "ONE");
+            return JSON.toJSONString(bo);
+//            return gson.toJson(borrowService.findBorrowing(borrowService.findBorrowId(c, b)));
         } else {
-            return gson.toJson("借阅失败！");
+            return JSON.toJSONString("借阅失败");
+//            return gson.toJson("借阅失败！");
         }
     }
 }
